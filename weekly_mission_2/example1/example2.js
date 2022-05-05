@@ -69,4 +69,9 @@ const explorers = [
    explorers.forEach(item => console.log(item.stack))
 
    console.log("Ejercicio 2.3")
-   
+   const explorer_stacks = explorers.map(my_explorers_in_list => my_explorers_in_list.stack);
+   console.log(explorer_stacks)
+
+   console.log("Ejercicio 2.4")
+   const explorers_with_js = explorers.filter(my_explorers_in_list => my_explorers_in_list.stack.includes("js"))
+   console.log(explorers_with_js)
