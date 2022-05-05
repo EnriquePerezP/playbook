@@ -79,3 +79,20 @@ const explorers = [
    console.log("Ejercicio 2.5")
    const first_explorer_in_cdmx = explorers.find(my_explorer_in_list => my_explorer_in_list.city === "CDMX")
    console.log(first_explorer_in_cdmx)
+
+   console.log("Ejercicio 2.6")
+   const all_exercises = explorers.reduce ((acc, my_explorer_in_list) => acc + my_explorer_in_list.exercises_completed,0)
+   console.log(all_exercises)
+
+   console.log("Ejercicio 2.7")
+   const explorers_exercises_completed = explorers.reduce((acc, my_explorer_in_list) => acc + my_explorer_in_list.exercises_completed,0)
+   console.log(explorers_exercises_completed)
+
+   console.log("Ejercicio 2.8")
+   const explorers_exercises_Finished = explorers.some (my_explorer_in_list => my_explorer_in_list["missions"]["frontend"].exercisesFinished === true) 
+   console.log(explorers_exercises_Finished)
+
+   console.log("Ejercicio 2.9")
+   const explorers_isFinished = explorers.every (my_explorers_in_list => my_explorers_in_list.missions.onboarding)
+   console.log(explorers_isFinished)
+
